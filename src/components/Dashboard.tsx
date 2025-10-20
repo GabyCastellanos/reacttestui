@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useAuth } from '../contexts/AuthContext';
 import Header from './Header';
 import TableSelector from './TableSelector';
 import QueryInterface from './QueryInterface';
@@ -16,7 +15,6 @@ export interface QueryResponse {
 }
 
 const Dashboard: React.FC = () => {
-  const { user } = useAuth();
   const [selectedTable, setSelectedTable] = useState<string>('');
   const [queryHistory, setQueryHistory] = useState<QueryResponse[]>([]);
   const [currentResponse, setCurrentResponse] = useState<QueryResponse | null>(null);
@@ -52,7 +50,7 @@ const Dashboard: React.FC = () => {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-100 mb-2">
-            🕵️ Welcome back, Detective {user?.name}!
+            🕵️ Welcome back, Detective!
           </h1>
           <p className="text-gray-400">
             Ready to investigate your data? Use natural language to uncover insights.

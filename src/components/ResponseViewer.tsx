@@ -188,16 +188,6 @@ const ResponseViewer: React.FC<ResponseViewerProps> = ({ response }) => {
                       Showing first 10 of {response.rawData.length} records
                     </p>
                   )}
-
-                  {/* JSON View */}
-                  <div className="mt-4">
-                    <h4 className="text-sm font-medium text-gray-700 mb-2">JSON Format:</h4>
-                    <div className="bg-gray-900 rounded-lg p-4 overflow-x-auto max-h-64 overflow-y-auto">
-                      <pre className="text-sm text-green-400 font-mono">
-                        {formatJson(response.rawData)}
-                      </pre>
-                    </div>
-                  </div>
                 </div>
               ) : (
                 <p className="text-sm text-gray-500 p-4">No data returned</p>

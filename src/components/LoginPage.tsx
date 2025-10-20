@@ -1,28 +1,17 @@
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { Eye, EyeOff, Search } from 'lucide-react';
+import { Eye, EyeOff } from 'lucide-react';
 import styles from './LoginPage.module.css';
 
 const LoginPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
   const { login } = useAuth();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
-    setIsLoading(true);
-
-    const success = await login(email, password);
-
-    if (!success) {
-      setError('Invalid credentials. Please try again.');
-    }
-
-    setIsLoading(false);
+    login(); // Just login instantly for hackathon demo
   };
 
   return (
@@ -30,8 +19,12 @@ const LoginPage: React.FC = () => {
       <div className={styles.loginCard}>
         <div className="text-center">
           <div className="flex justify-center">
-            <div className={`${styles.logoContainer} p-3 rounded-full`}>
-              <Search className="h-8 w-8 text-white" />
+            <div className="p-3">
+              <img
+                src="/logo.png"
+                alt="Queryous Minds Logo"
+                className="h-40 w-40 object-contain"
+              />
             </div>
           </div>
           <h2 className={styles.title}>
@@ -92,26 +85,12 @@ const LoginPage: React.FC = () => {
             </div>
           </div>
 
-          {error && (
-            <div className={styles.errorMessage}>
-              {error}
-            </div>
-          )}
-
           <div>
             <button
               type="submit"
-              disabled={isLoading}
               className={styles.primaryButton}
             >
-              {isLoading ? (
-                <div className="flex items-center justify-center">
-                  <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                  Signing in...
-                </div>
-              ) : (
-                'Sign in'
-              )}
+              Sign in
             </button>
           </div>
 
