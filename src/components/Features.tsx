@@ -4,24 +4,24 @@ export default function Features() {
   const features = [
     {
       icon: MessageSquare,
-      title: "Natural Language Interface",
-      description: "Ask questions about your observability data in plain English. No complex query languages required.",
+      title: "Something 1",
+      description: "description",
       screenshot: "/screenshots/query-interface.png",
-      implementation: "Built with React, TypeScript, and advanced NLP processing"
+      implementation: "blah blah"
     },
     {
       icon: Database,
-      title: "Multi-Source Data Integration",
-      description: "Connect to various observability tools and databases. Unified querying across all your data sources.",
-      screenshot: "/screenshots/data-sources.png",
-      implementation: "RESTful API with pluggable data source adapters"
+            title: "Something 2",
+      description: "description",
+      screenshot: "/screenshots/query-interface.png",
+      implementation: "blah blah"
     },
     {
       icon: Zap,
-      title: "Real-time Analysis",
-      description: "Get instant insights with AI-powered analysis. Identify patterns and anomalies in seconds.",
-      screenshot: "/screenshots/analysis-results.png",
-      implementation: "Streaming data processing with WebSocket connections"
+            title: "Something 3",
+      description: "description",
+      screenshot: "/screenshots/query-interface.png",
+      implementation: "blah blah"
     },
     {
       icon: Code,
@@ -32,17 +32,17 @@ export default function Features() {
     },
     {
       icon: Shield,
-      title: "Secure Authentication",
-      description: "Enterprise-grade security with role-based access control and audit logging.",
-      screenshot: "/screenshots/security.png",
-      implementation: "JWT-based auth with OAuth2 integration"
+            title: "Something 1",
+      description: "description",
+      screenshot: "/screenshots/query-interface.png",
+      implementation: "blah blah"
     },
     {
       icon: TrendingUp,
-      title: "Interactive Visualizations",
-      description: "Beautiful charts and graphs that make complex data easy to understand.",
-      screenshot: "/screenshots/visualizations.png",
-      implementation: "D3.js and Chart.js powered interactive dashboards"
+            title: "Something 1",
+      description: "description",
+      screenshot: "/screenshots/query-interface.png",
+      implementation: "blah blah"
     }
   ];
 
@@ -51,10 +51,10 @@ export default function Features() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Powerful Features
-          </h2>
+            Some title
+                      </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Our AI-powered platform transforms how you investigate and analyze observability data
+            Features
           </p>
         </div>
 
@@ -92,24 +92,6 @@ export default function Features() {
               </div>
             );
           })}
-        </div>
-
-        {/* Tech Stack */}
-        <div className="mt-20 text-center">
-          <h3 className="text-3xl font-bold text-white mb-8">Built With Modern Technology</h3>
-          <div className="flex flex-wrap justify-center gap-6">
-            {[
-              'React', 'TypeScript', 'Node.js', 'PostgreSQL',
-              'Docker', 'Kubernetes', 'OpenAI', 'Tailwind CSS'
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="bg-dark-700 text-gray-300 px-4 py-2 rounded-full border border-primary-500/30 hover:border-primary-500 transition-colors"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>

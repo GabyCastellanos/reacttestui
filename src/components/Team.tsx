@@ -4,54 +4,54 @@ export default function Team() {
       name: "Afifa",
       role: "AI/ML Engineer",
       contributions: [
-        "Natural Language Processing implementation",
-        "Query understanding and intent recognition",
-        "Machine learning model optimization"
+        "Something",
+        "Something",
+        "S0mething"
       ]
     },
     {
       name: "John",
-      role: "Full-Stack Developer",
+      role: "Developer",
       contributions: [
-        "Frontend React application development",
-        "API design and implementation",
-        "Database schema and optimization"
+                "Something",
+        "Something",
+        "S0mething"
       ]
     },
     {
       name: "Arash",
-      role: "Backend Engineer",
+      role: "Dev",
       contributions: [
-        "Microservices architecture design",
-        "Data pipeline implementation",
-        "Performance optimization and caching"
+               "Something",
+        "Something",
+        "S0mething"
       ]
     },
     {
       name: "Luis",
-      role: "DevOps Engineer",
+      role: "Dev",
       contributions: [
-        "Infrastructure automation and deployment",
-        "Container orchestration with Kubernetes",
-        "CI/CD pipeline setup and monitoring"
+               "Something",
+        "Something",
+        "S0mething"
       ]
     },
     {
       name: "Anastasiya",
-      role: "UX/UI Designer & Frontend Dev",
+      role: "Dev",
       contributions: [
-        "User experience research and design",
-        "Interactive UI component development",
-        "Design system and accessibility standards"
+                "Something",
+        "Something",
+        "S0mething"
       ]
     },
     {
       name: "Gabriela",
-      role: "Product Manager & Frontend Dev",
+      role: " Dev",
       contributions: [
-        "Product strategy and requirements gathering",
-        "Frontend architecture and state management",
-        "User acceptance testing and quality assurance"
+                "Something",
+        "Something",
+        "S0mething"
       ]
     }
   ];
@@ -64,7 +64,7 @@ export default function Team() {
             Meet Our Team
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Six passionate engineers and designers who came together to revolutionize observability investigations
+            Six peeps and stuff
           </p>
         </div>
 
@@ -99,26 +99,6 @@ export default function Team() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Team Stats */}
-        <div className="mt-20 grid md:grid-cols-4 gap-8 text-center">
-          <div className="card">
-            <div className="text-3xl font-bold text-primary-500 mb-2">6</div>
-            <div className="text-gray-400">Team Members</div>
-          </div>
-          <div className="card">
-            <div className="text-3xl font-bold text-secondary-500 mb-2">72h</div>
-            <div className="text-gray-400">Development Hours</div>
-          </div>
-          <div className="card">
-            <div className="text-3xl font-bold text-primary-500 mb-2">5</div>
-            <div className="text-gray-400">Core Features</div>
-          </div>
-          <div className="card">
-            <div className="text-3xl font-bold text-secondary-500 mb-2">100%</div>
-            <div className="text-gray-400">Passion Driven</div>
-          </div>
         </div>
       </div>
     </section>

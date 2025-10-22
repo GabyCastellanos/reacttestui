@@ -13,10 +13,10 @@ export default function Hero() {
               className="w-24 h-24 mx-auto mb-6 castle-glow animate-castle-float"
             />
             <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-500 bg-clip-text text-transparent mb-4">
-              Queryous Minds
+              Queryousity
             </h1>
             <p className="text-2xl md:text-3xl text-gray-300 mb-6">
-              AI-Powered Observability Investigation Assistant
+              AI-Powered Observability Investigation Assistant by Queryous Minds
             </p>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
               Revolutionizing how teams investigate system issues through natural language queries
