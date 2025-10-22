@@ -23,7 +23,7 @@ export default function Team() {
     {
       name: "HerQL Poirot",
       realname: "John",
-      avatar: "/avatars/john.png"
+      avatar: "/avatars/herqlpoirot.png"
     },
     {
       name: "Spongelog Squarepants",
@@ -51,7 +51,7 @@ export default function Team() {
                 <img
                   src={member.avatar}
                   alt={member.name}
-                  className="w-36 h-36 mx-auto rounded-full object-cover border-4 border-primary-500/30"
+                  className="w-36 h-36 mx-auto rounded-full object-contain border-4 border-primary-500/30"
                   onError={(e) => {
                     // Fallback to initial letter if image doesn't exist
                     const target = e.target as HTMLImageElement;
