@@ -51,7 +51,7 @@ export default function Team() {
                 <img
                   src={member.avatar}
                   alt={member.name}
-                  className="w-32 h-32 mx-auto rounded-full object-cover border-4 border-primary-500/30"
+                  className="w-36 h-36 mx-auto rounded-full object-cover border-4 border-primary-500/30"
                   onError={(e) => {
                     // Fallback to initial letter if image doesn't exist
                     const target = e.target as HTMLImageElement;
@@ -60,10 +60,10 @@ export default function Team() {
                     if (fallback) fallback.style.display = 'flex';
                   }}
                 />
-                <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center text-4xl font-bold text-white" style={{display: 'none'}}>
+                <div className="w-36 h-36 mx-auto bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center text-4xl font-bold text-white" style={{display: 'none'}}>
                   {member.name.charAt(0)}
                 </div>
-                <div className="absolute inset-0 w-32 h-32 mx-auto rounded-full border-4 border-primary-500/30 animate-pulse"></div>
+                <div className="absolute inset-0 w-36 h-36 mx-auto rounded-full border-4 border-primary-500/30 animate-pulse"></div>
               </div>
 
               <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
