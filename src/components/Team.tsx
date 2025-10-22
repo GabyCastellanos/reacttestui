@@ -2,28 +2,33 @@ export default function Team() {
   const teamMembers = [
     {
       name: "Enolog",
-      role: "Afifa"
+      realname: "Afifa",
+      avatar: "/avatars/enolog.png"
     },
     {
       name: "Whatson",
-      role: "Anastasiya"
+      realname: "Anastasiya",
+      avatar: "/avatars/whatson.png"
     },
     {
       name: "Quandary of Rivia",
-      role: "Arash"
+      realname: "Arash",
+      avatar: "/avatars/quandaryofrivia.png"
     },
     {
-
       name: "Query Bradshaw",
-      role: "Gabriela",
+      realname: "Gabriela",
+      avatar: "/avatars/querybradshaw.png"
     },
     {
       name: "HerQL Poirot",
-      role: "John",
+      realname: "John",
+      avatar: "/avatars/john.png"
     },
     {
       name: "Spongelog Squarepants",
-      role: " Luis"
+      realname: "Luis",
+      avatar: "/avatars/luis.png"
     }
   ];
 
@@ -43,14 +48,26 @@ export default function Team() {
             >
               {/* Avatar */}
               <div className="relative mb-6">
-                <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center text-4xl font-bold text-white">
+                <img
+                  src={member.avatar}
+                  alt={member.name}
+                  className="w-32 h-32 mx-auto rounded-full object-cover border-4 border-primary-500/30"
+                  onError={(e) => {
+                    // Fallback to initial letter if image doesn't exist
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
+                <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center text-4xl font-bold text-white" style={{display: 'none'}}>
                   {member.name.charAt(0)}
                 </div>
                 <div className="absolute inset-0 w-32 h-32 mx-auto rounded-full border-4 border-primary-500/30 animate-pulse"></div>
               </div>
 
               <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
-              <p className="text-primary-400 font-semibold mb-4">{member.role}</p>
+              <p className="text-primary-400 font-semibold mb-4">{member.realname}</p>
             </div>
           ))}
         </div>
