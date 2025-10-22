@@ -1,4 +1,4 @@
-import { Play, Code2, Brain } from 'lucide-react';
+import { Play, Brain, Rocket } from 'lucide-react';
 
 export default function Demo() {
   return (
@@ -27,33 +27,8 @@ export default function Demo() {
           </div>
         </div>
 
-        {/* Architecture Overview */}
+        {/* AI Usage and Future Plans */}
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          <div className="card">
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <Code2 className="w-8 h-8 text-primary-500" />
-              System Architecture
-            </h3>
-            <div className="space-y-4">
-              <div className="bg-dark-700 rounded-lg p-4">
-                <h4 className="font-semibold text-secondary-400 mb-2">Frontend Layer</h4>
-                <p className="text-gray-400 text-sm">React 18 + TypeScript for type-safe, responsive UI</p>
-              </div>
-              <div className="bg-dark-700 rounded-lg p-4">
-                <h4 className="font-semibold text-secondary-400 mb-2">API Gateway</h4>
-                <p className="text-gray-400 text-sm">Node.js + Express with authentication middleware</p>
-              </div>
-              <div className="bg-dark-700 rounded-lg p-4">
-                <h4 className="font-semibold text-secondary-400 mb-2">AI Processing</h4>
-                <p className="text-gray-400 text-sm">OpenAI GPT-4 for natural language understanding</p>
-              </div>
-              <div className="bg-dark-700 rounded-lg p-4">
-                <h4 className="font-semibold text-secondary-400 mb-2">Data Layer</h4>
-                <p className="text-gray-400 text-sm">PostgreSQL + Redis for fast data retrieval</p>
-              </div>
-            </div>
-          </div>
-
           <div className="card">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
               <Brain className="w-8 h-8 text-secondary-500" />
@@ -75,6 +50,31 @@ export default function Demo() {
               <div className="bg-dark-700 rounded-lg p-4">
                 <h4 className="font-semibold text-primary-400 mb-2">Response Synthesis</h4>
                 <p className="text-gray-400 text-sm">AI-generated insights and recommendations based on data analysis results</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <Rocket className="w-8 h-8 text-primary-500" />
+              Future Implementations
+            </h3>
+            <div className="space-y-4">
+              <div className="bg-dark-700 rounded-lg p-4">
+                <h4 className="font-semibold text-secondary-400 mb-2">Multi-Modal Data Sources</h4>
+                <p className="text-gray-400 text-sm">Expand beyond databases to include logs, metrics, traces, and APM tools for comprehensive observability</p>
+              </div>
+              <div className="bg-dark-700 rounded-lg p-4">
+                <h4 className="font-semibold text-secondary-400 mb-2">Predictive Analytics</h4>
+                <p className="text-gray-400 text-sm">Machine learning models to predict system failures and performance degradation before they impact users</p>
+              </div>
+              <div className="bg-dark-700 rounded-lg p-4">
+                <h4 className="font-semibold text-secondary-400 mb-2">Auto-Remediation</h4>
+                <p className="text-gray-400 text-sm">AI-driven automatic issue resolution with confidence scoring and human approval workflows</p>
+              </div>
+              <div className="bg-dark-700 rounded-lg p-4">
+                <h4 className="font-semibold text-secondary-400 mb-2">Custom Dashboards</h4>
+                <p className="text-gray-400 text-sm">Voice-activated dashboard generation and real-time collaborative investigation workspaces</p>
               </div>
             </div>
           </div>
