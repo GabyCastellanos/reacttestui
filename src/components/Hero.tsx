@@ -16,11 +16,13 @@ export default function Hero() {
               Queryousity
             </h1>
             <p className="text-2xl md:text-3xl text-gray-300 mb-6">
-              AI-Powered Observability Investigation Assistant by Queryous Minds
+              AI-Powered Observability Investigation Assistant brought to you by Queryous Minds
             </p>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-              Revolutionizing how teams investigate system issues through natural language queries
-              and intelligent data analysis. Ask questions in plain English, get insights in seconds.
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-6">
+              <span className="text-red-400 font-bold text-2xl">Engineers are drowning in Teams pings.</span> <span className="text-orange-300 font-semibold">Stakeholders are getting curious about data,</span> but SQL queries aren't exactly user-friendly.
+            </p>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-medium">
+              <span className="text-primary-300 font-bold">What if curiosity could be satisfied instantly?</span> Queryousity makes everyone a data detective—no code required, just questions.
             </p>
           </div>
 

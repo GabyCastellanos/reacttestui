@@ -10,7 +10,7 @@ export default function TechStack() {
           <div className="flex flex-wrap justify-center gap-6">
             {[
               'React', 'TypeScript', 'Something', 'SOmething',
-              'Something', 'SOmething', 'Something', 'Tailwind CSS'
+              'Something', 'SOmething', 'Something'
             ].map((tech) => (
               <span
                 key={tech}

@@ -1,4 +1,4 @@
-import { Play, Code2 } from 'lucide-react';
+import { Play, Code2, Brain } from 'lucide-react';
 
 export default function Demo() {
   return (
@@ -41,15 +41,40 @@ export default function Demo() {
               </div>
               <div className="bg-dark-700 rounded-lg p-4">
                 <h4 className="font-semibold text-secondary-400 mb-2">API Gateway</h4>
-                <p className="text-gray-400 text-sm">blah blah blah blah</p>
+                <p className="text-gray-400 text-sm">Node.js + Express with authentication middleware</p>
               </div>
               <div className="bg-dark-700 rounded-lg p-4">
                 <h4 className="font-semibold text-secondary-400 mb-2">AI Processing</h4>
-                <p className="text-gray-400 text-sm">blah blah blah blah</p>
+                <p className="text-gray-400 text-sm">OpenAI GPT-4 for natural language understanding</p>
               </div>
               <div className="bg-dark-700 rounded-lg p-4">
                 <h4 className="font-semibold text-secondary-400 mb-2">Data Layer</h4>
-                <p className="text-gray-400 text-sm">blah blah blah blah</p>
+                <p className="text-gray-400 text-sm">PostgreSQL + Redis for fast data retrieval</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <Brain className="w-8 h-8 text-secondary-500" />
+              AI Usage & Implementation
+            </h3>
+            <div className="space-y-4">
+              <div className="bg-dark-700 rounded-lg p-4">
+                <h4 className="font-semibold text-primary-400 mb-2">Natural Language Processing</h4>
+                <p className="text-gray-400 text-sm">OpenAI GPT-4 to understand user queries and extract intent from plain English questions</p>
+              </div>
+              <div className="bg-dark-700 rounded-lg p-4">
+                <h4 className="font-semibold text-primary-400 mb-2">SQL Query Generation</h4>
+                <p className="text-gray-400 text-sm">AI-powered translation of natural language to optimized SQL queries with context awareness</p>
+              </div>
+              <div className="bg-dark-700 rounded-lg p-4">
+                <h4 className="font-semibold text-primary-400 mb-2">Intelligent Analysis</h4>
+                <p className="text-gray-400 text-sm">Machine learning models for pattern recognition and anomaly detection in observability data</p>
+              </div>
+              <div className="bg-dark-700 rounded-lg p-4">
+                <h4 className="font-semibold text-primary-400 mb-2">Response Synthesis</h4>
+                <p className="text-gray-400 text-sm">AI-generated insights and recommendations based on data analysis results</p>
               </div>
             </div>
           </div>

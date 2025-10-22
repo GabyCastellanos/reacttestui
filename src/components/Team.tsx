@@ -1,58 +1,29 @@
 export default function Team() {
   const teamMembers = [
     {
-      name: "Afifa",
-      role: "AI/ML Engineer",
-      contributions: [
-        "Something",
-        "Something",
-        "S0mething"
-      ]
+      name: "Enolog",
+      role: "Afifa"
     },
     {
-      name: "John",
-      role: "Developer",
-      contributions: [
-                "Something",
-        "Something",
-        "S0mething"
-      ]
+      name: "Whatson",
+      role: "Anastasiya"
     },
     {
-      name: "Arash",
-      role: "Dev",
-      contributions: [
-               "Something",
-        "Something",
-        "S0mething"
-      ]
+      name: "Quandary of Rivia",
+      role: "Arash"
     },
     {
-      name: "Luis",
-      role: "Dev",
-      contributions: [
-               "Something",
-        "Something",
-        "S0mething"
-      ]
+
+      name: "Query Bradshaw",
+      role: "Gabriela",
     },
     {
-      name: "Anastasiya",
-      role: "Dev",
-      contributions: [
-                "Something",
-        "Something",
-        "S0mething"
-      ]
+      name: "HerQL Poirot",
+      role: "John",
     },
     {
-      name: "Gabriela",
-      role: " Dev",
-      contributions: [
-                "Something",
-        "Something",
-        "S0mething"
-      ]
+      name: "Spongelog Squarepants",
+      role: " Luis"
     }
   ];
 
@@ -63,11 +34,7 @@ export default function Team() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Meet Our Team
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Six peeps and stuff
-          </p>
         </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <div
@@ -84,19 +51,6 @@ export default function Team() {
 
               <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
               <p className="text-primary-400 font-semibold mb-4">{member.role}</p>
-
-              {/* Contributions */}
-              <div className="text-left mb-6">
-                <h4 className="text-sm font-semibold text-gray-300 mb-3 uppercase tracking-wide">Key Contributions:</h4>
-                <ul className="space-y-2">
-                  {member.contributions.map((contribution, idx) => (
-                    <li key={idx} className="text-gray-400 text-sm flex items-start">
-                      <span className="text-secondary-500 mr-2">•</span>
-                      {contribution}
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           ))}
         </div>
