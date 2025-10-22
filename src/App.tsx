@@ -1,38 +1,20 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import LoginPage from './components/LoginPage';
-import Dashboard from './components/Dashboard';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
-
-function AppRoutes() {
-  const { isAuthenticated } = useAuth();
-
-  return (
-    <Routes>
-      <Route
-        path="/login"
-        element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <LoginPage />}
-      />
-      <Route
-        path="/dashboard"
-        element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" replace />}
-      />
-      <Route
-        path="/"
-        element={<Navigate to={isAuthenticated ? "/dashboard" : "/login"} replace />}
-      />
-    </Routes>
-  );
-}
+import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Demo from './components/Demo';
+import Team from './components/Team';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <AuthProvider>
-      <Router>
-        <div className="min-h-screen bg-gray-50">
-          <AppRoutes />
-        </div>
-      </Router>
-    </AuthProvider>
+    <div className="min-h-screen bg-dark-900">
+      <Navigation />
+      <Hero />
+      <Features />
+      <Demo />
+      <Team />
+      <Footer />
+    </div>
   );
 }
 
