@@ -7,7 +7,7 @@ export default function Team() {
     },
     {
       name: "Whatson",
-      realname: "Anastasiya",
+      realname: "Anastasiya ",
       avatar: "/avatars/whatson.png"
     },
     {
