@@ -1,48 +1,32 @@
-import { MessageSquare, Database, Zap, Code, Shield, TrendingUp } from 'lucide-react';
+import { MessageSquare, Code, Shield, TrendingUp } from 'lucide-react';
 
 export default function Features() {
   const features = [
+
+
     {
       icon: MessageSquare,
-      title: "Something 1",
-      description: "description",
-      screenshot: "/screenshots/query-interface.png",
-      implementation: "blah blah"
-    },
-    {
-      icon: Database,
-            title: "Something 2",
-      description: "description",
-      screenshot: "/screenshots/query-interface.png",
-      implementation: "blah blah"
-    },
-    {
-      icon: Zap,
-            title: "Something 3",
-      description: "description",
-      screenshot: "/screenshots/query-interface.png",
-      implementation: "blah blah"
-    },
-    {
-      icon: Code,
-      title: "SQL Generation",
-      description: "Automatically generates optimized SQL queries from natural language input.",
-      screenshot: "/screenshots/sql-generation.png",
-      implementation: "LLM-powered query generation with syntax validation"
+      title: "Data Generation",
+      screenshot: "/screenshots/data.png",
+      implementation: "Data simulated through Copilot based on Swivel Data Prompts"
     },
     {
       icon: Shield,
-            title: "Something 1",
-      description: "description",
-      screenshot: "/screenshots/query-interface.png",
-      implementation: "blah blah"
+      title: "Architecture",
+      screenshot: "/screenshots/architecture.png",
+      implementation: "The system is backed by powerful Anthropic Claude Sonnet Model that interprets the user query"
+    },
+    {
+      icon: Code,
+      title: "Ask a question",
+      screenshot: "/screenshots/pic1.jpg",
+      implementation: "Ask a questions through our intuitive interface"
     },
     {
       icon: TrendingUp,
-            title: "Something 1",
-      description: "description",
-      screenshot: "/screenshots/query-interface.png",
-      implementation: "blah blah"
+      title: "Results",
+      screenshot: "/screenshots/pic2.jpg",
+      implementation: "Model responds with actionable insights and analytics"
     }
   ];
 
@@ -51,11 +35,9 @@ export default function Features() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Some title
+            Overview
                       </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Features
-          </p>
+
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -72,22 +54,19 @@ export default function Features() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-2">{feature.title}</h3>
-                    <p className="text-gray-400 mb-4">{feature.description}</p>
                     <div className="bg-dark-700 rounded-lg p-3 mb-4">
                       <p className="text-sm text-secondary-400 font-mono">{feature.implementation}</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Placeholder for screenshot */}
-                <div className="bg-dark-700 rounded-lg p-4 border-2 border-dashed border-gray-600">
-                  <div className="bg-gradient-to-br from-primary-900 to-secondary-900 rounded h-48 flex items-center justify-center">
-                    <div className="text-center">
-                      <IconComponent className="w-12 h-12 text-primary-400 mx-auto mb-2" />
-                      <p className="text-gray-400 text-sm">Screenshot: {feature.title}</p>
-                      <p className="text-xs text-gray-500">{feature.screenshot}</p>
-                    </div>
-                  </div>
+                {/* Screenshot */}
+                <div className="bg-dark-700 rounded-lg overflow-hidden border-2 border-primary-500/20">
+                  <img 
+                    src={feature.screenshot} 
+                    alt={`${feature.title} screenshot`}
+                    className="w-full h-64 object-contain"
+                  />
                 </div>
               </div>
             );

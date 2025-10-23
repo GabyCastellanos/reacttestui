@@ -28,7 +28,7 @@ export default function Team() {
     {
       name: "Spongelog Squarepants",
       realname: "Luis",
-      avatar: "/avatars/luis.png"
+      avatar: "/avatars/spongelogsquarepants.png"
     }
   ];
 

@@ -9,8 +9,8 @@ export default function TechStack() {
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             {[
-              'React', '.NET/C#', 'Anthropic Claude Sonnet-3-5 v2', 'AWS API Gateway',
-              'AWS Lambda', 'Amazon Q'
+              'AWS Bedrock', 'Anthropic Claude Sonnet-3-5 v2', 'AWS API Gateway',
+              'AWS Lambda', 'Amazon Q', 'React', '.NET/C#'
             ].map((tech) => (
               <span
                 key={tech}

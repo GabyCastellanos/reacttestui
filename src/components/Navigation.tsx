@@ -28,7 +28,7 @@ export default function Navigation() {
               onClick={() => scrollToSection('features')}
               className="text-gray-300 hover:text-primary-400 transition-colors"
             >
-              Features
+              Overview
             </button>
             <button
               onClick={() => scrollToSection('demo')}
