@@ -1,4 +1,4 @@
-import { Play, Brain, Rocket } from 'lucide-react';
+import { Brain, Rocket } from 'lucide-react';
 
 export default function Demo() {
   return (
@@ -9,20 +9,21 @@ export default function Demo() {
             See It In Action
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Queryosity
+            
           </p>
         </div>
 
-        {/* Demo Video/Interactive Section */}
+        {/* Demo Video */}
         <div className="max-w-5xl mx-auto mb-16">
           <div className="card">
-            <div className="relative bg-gradient-to-br from-primary-900 to-secondary-900 rounded-lg h-96 flex items-center justify-center">
-              <div className="text-center">
-                <Play className="w-24 h-24 text-white mx-auto mb-4 opacity-80 hover:opacity-100 transition-opacity cursor-pointer" />
-                <h3 className="text-2xl font-bold text-white mb-2">Demo</h3>
-                <p className="text-gray-300">Watch</p>
-                <p className="text-gray-400 mt-4 text-sm">Demo video placeholder</p>
-              </div>
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/8VsAXHAJsto"
+                title="Queryosity Demo Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
