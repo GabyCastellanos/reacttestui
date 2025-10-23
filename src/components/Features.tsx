@@ -62,8 +62,8 @@ export default function Features() {
 
                 {/* Screenshot */}
                 <div className="bg-dark-700 rounded-lg overflow-hidden border-2 border-primary-500/20">
-                  <img 
-                    src={feature.screenshot} 
+                  <img
+                    src={feature.screenshot}
                     alt={`${feature.title} screenshot`}
                     className="w-full h-64 object-contain"
                   />
