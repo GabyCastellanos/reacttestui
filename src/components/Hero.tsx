@@ -10,10 +10,10 @@ export default function Hero() {
             <img
               src="/logo.png"
               alt="Queryous Minds Logo"
-              className="w-24 h-24 mx-auto mb-6 animate-castle-float"
+              className="w-40 h-40 mx-auto mb-4 animate-castle-float"
             />
-            <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-500 bg-clip-text text-transparent mb-4">
-              Queryousity
+            <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-500 bg-clip-text text-transparent mb-4 py-2">
+              Queryosity
             </h1>
             <p className="text-2xl md:text-3xl text-gray-300 mb-6">
               AI-Powered Observability Investigation Assistant brought to you by Queryous Minds
