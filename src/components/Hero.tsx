@@ -13,17 +13,16 @@ export default function Hero() {
               className="w-24 h-24 mx-auto mb-6 animate-castle-float"
             />
             <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-500 bg-clip-text text-transparent mb-4">
-              Queryousity
+              Queryosity
             </h1>
             <p className="text-2xl md:text-3xl text-gray-300 mb-6">
               AI Powered Natural Log Query And Observability Assistant
             </p>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-6">
-              <span className="text-red-400 font-bold text-2xl">Stakeholders require instant, self-service access to analytics derived from structured logs without relying on developer intervention</span> <span className="text-orange-300 font-semibold"> The current process involves manual querying and interpretation of logs by engineers, which introduces delays and bottlenecks.</span>
+             <span className="text-red-400 font-bold text-2xl">Engineers are drowning in Teams pings.</span> <span className="text-orange-300 font-semibold">Stakeholders are getting curious about data,</span> but querying data takes up time that engineers don't have.
             </p>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-medium">
-              <span className="text-primary-300 font-bold">What if Queryosity could satisfy this instantly?</span> 
-              Queryosity enables natural language querying over structured log data which includes timestamp, error codes, and error messages so that non-technical users can retrieve insights quickly and independently.
+              <span className="text-primary-300 font-bold">What if curiosity could be satisfied instantly?</span> Queryosity makes everyone a data detective—no code required, just questions.
             </p>
           </div>
 
@@ -39,7 +38,13 @@ export default function Hero() {
               <h3 className="text-xl font-semibold text-white mb-2">AI-Powered Instant Analytics</h3>
               <p className="text-gray-400">Get intelligent insights and automated investigations</p>
             </div>
+            <div className="card text-center transform hover:scale-105 transition-all duration-300">
+              <BarChart3 className="w-12 h-12 text-primary-600 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-white mb-2">Customized Models</h3>
+              <p className="text-gray-400">AI analysis that understand your business language.</p>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
