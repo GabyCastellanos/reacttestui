@@ -5,12 +5,12 @@ export default function TechStack() {
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Built With Modern Technology</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-            Our AI-powered platform leverages cutting-edge technologies for performance and scalability
+            Our AI-powered platform leverages cutting-edge technologies
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             {[
-              'React', 'TypeScript', 'Something', 'SOmething',
-              'Something', 'SOmething', 'Something'
+              'React', '.NET/C#', 'Anthropic Claude Sonnet-3-5 v2', 'AWS API Gateway',
+              'AWS Lambda', 'Amazon Q'
             ].map((tech) => (
               <span
                 key={tech}

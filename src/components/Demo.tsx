@@ -36,20 +36,24 @@ export default function Demo() {
             </h3>
             <div className="space-y-4">
               <div className="bg-dark-700 rounded-lg p-4">
-                <h4 className="font-semibold text-primary-400 mb-2">Natural Language Processing</h4>
-                <p className="text-gray-400 text-sm">OpenAI GPT-4 to understand user queries and extract intent from plain English questions</p>
+                <h4 className="font-semibold text-primary-400 mb-2">Natural Language Querying</h4>
+                <p className="text-gray-400 text-sm">Anthropic Claude Sonnet 3-5 V2 model services by AWS Bedrock</p>
               </div>
               <div className="bg-dark-700 rounded-lg p-4">
-                <h4 className="font-semibold text-primary-400 mb-2">SQL Query Generation</h4>
-                <p className="text-gray-400 text-sm">AI-powered translation of natural language to optimized SQL queries with context awareness</p>
+                <h4 className="font-semibold text-primary-400 mb-2">UI</h4>
+                <p className="text-gray-400 text-sm">React application powered by Amazon Q</p>
               </div>
               <div className="bg-dark-700 rounded-lg p-4">
-                <h4 className="font-semibold text-primary-400 mb-2">Intelligent Analysis</h4>
-                <p className="text-gray-400 text-sm">Machine learning models for pattern recognition and anomaly detection in observability data</p>
+                <h4 className="font-semibold text-primary-400 mb-2">Infrastructure</h4>
+                <p className="text-gray-400 text-sm">Infrastructure as Code spinned up using Amazon Q</p>
               </div>
               <div className="bg-dark-700 rounded-lg p-4">
-                <h4 className="font-semibold text-primary-400 mb-2">Response Synthesis</h4>
-                <p className="text-gray-400 text-sm">AI-generated insights and recommendations based on data analysis results</p>
+                <h4 className="font-semibold text-primary-400 mb-2">Team Chibi Style Images</h4>
+                <p className="text-gray-400 text-sm">Chat-GPT</p>
+              </div>
+              <div className="bg-dark-700 rounded-lg p-4">
+                <h4 className="font-semibold text-primary-400 mb-2">Team Video</h4>
+                <p className="text-gray-400 text-sm">Pika</p>
               </div>
             </div>
           </div>
@@ -69,12 +73,8 @@ export default function Demo() {
                 <p className="text-gray-400 text-sm">Machine learning models to predict system failures and performance degradation before they impact users</p>
               </div>
               <div className="bg-dark-700 rounded-lg p-4">
-                <h4 className="font-semibold text-secondary-400 mb-2">Auto-Remediation</h4>
-                <p className="text-gray-400 text-sm">AI-driven automatic issue resolution with confidence scoring and human approval workflows</p>
-              </div>
-              <div className="bg-dark-700 rounded-lg p-4">
                 <h4 className="font-semibold text-secondary-400 mb-2">Custom Dashboards</h4>
-                <p className="text-gray-400 text-sm">Voice-activated dashboard generation and real-time collaborative investigation workspaces</p>
+                <p className="text-gray-400 text-sm">Custom dashboards for multiple data sources</p>
               </div>
             </div>
           </div>
