@@ -12,7 +12,7 @@ export default function Hero() {
               alt="Queryous Minds Logo"
               className="w-24 h-24 mx-auto mb-6 animate-castle-float"
             />
-            <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-500 bg-clip-text text-transparent mb-4">
+            <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-500 bg-clip-text text-transparent mb-4 pb-3">
               Queryosity
             </h1>
             <p className="text-2xl md:text-3xl text-gray-300 mb-6">
